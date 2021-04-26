@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-snowpack-app"
+    />
+    <!--
+      Snowpack will replace %PUBLIC_URL% with the value you have for `baseUrl` in `snowpack.config.js`.
+      Make sure to update it with your GitHub Page URL. https://<your-username>.github.io/<your-repo-name>
+
+      More about config options:
+      - https://www.snowpack.dev/reference/configuration#buildoptions.baseurl
+    -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="%PUBLIC_URL%/_dist_/index.css"
+    />
+    <title>Weather search</title>
+  </head>
+  <body>
+    <!--
+      This HTML file is a template.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+
+      Start modyfing from here.
+    -->
+    <div class="py-10 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h3
+          class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
+        >
+          Buscador del clima
+        </h3>
+        <p class="mt-4 max-w-2xl text-xl leading-7 text-gray-500 mx-auto">
+          Selecciona la ciudad que deseas consultar, si deseas limpiar la búsqueda pulsa el botón 'limpiar':
+        </p>
+        <form>
+          <input placeholder="Inserta el nombre de la ciudad aquí" class="p-2 w-6/12 m-4 border focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent ...">
+          <button class="p-2 bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 text-white">
+            Buscar
+          </button>
+        </form>
+        <div id="container"></div>
+        <div class="my-5 w-96 bg-blue-800 p-5 text-white inline-block h-96">
+          <p class="city-name">caja de prueba</p>
+          <div class="info-container flex m-5 h-70">
+            <div class="grades bg-gray-600 w-60"> 50</div>
+            <div class="weather-container bg-pink-600">
+              <div class="precipitation bg-green-600 h-30">probabilidad de precipitación</div>
+              <div class="icon bg-red-600 h-40">Icono</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add more scripts here -->
+    <script type="module" src="%PUBLIC_URL%/_dist_/index.js"></script>
+  </body>
+</html>
